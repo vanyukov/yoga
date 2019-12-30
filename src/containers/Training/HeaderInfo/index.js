@@ -20,16 +20,19 @@ export default class HeaderInfo extends React.Component {
                 </Col>
                 <Col
                     xs='auto'
-                    className={style.numbers_ml + " text-left"}
+                    className={style.numbers_box + " text-left"}
                 >
-                    <span className="badge badge-light">
-                        {(this.props.expercise.kol - this.props.currentRepeat)}
-                    </span>
-                    <br />
-                    <span className="badge badge-light">
-                        {(this.props.expercise.sec - this.props.currentTime)}
-                    </span>
-                </Col>
+                    <p className={style.numbers + " h5"}>
+                        <span className="badge badge-light">
+                            {(this.props.expercise.kol - this.props.currentRepeat)}
+                        </span>
+                    </p>
+                    <p className={style.numbers + " h5"}>
+                        <span className="badge badge-light">
+                            {(this.props.expercise.sec - this.props.currentTime)}
+                        </span>
+                    </p>
+               </Col>
             </Row>
         );
     }

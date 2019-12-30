@@ -1,5 +1,6 @@
 node_modules
 public/pic
 .idea/
+.vscode/sftp.json
 
 *.log

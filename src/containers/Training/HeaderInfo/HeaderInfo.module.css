@@ -1,5 +1,10 @@
-.numbers_ml{
+.numbers_box{
     margin-left: -20px;
+}
+
+.numbers{
+    margin-top: -2px;
+    margin-bottom: 1px;
 }
 
 .text_ml{
