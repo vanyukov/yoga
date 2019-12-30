@@ -1,0 +1,15 @@
+.complex_title {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.info_box_left {
+    max-height: calc(100vh - 220px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.info_box_right {
+    max-height: calc(100vh - 110px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}

@@ -1,0 +1,17 @@
+.btn_stop{
+    margin-left: 18px;
+}
+
+.text_count{
+    margin-right: -15px;
+}
+
+.left_btn{
+    margin: 0;
+}
+
+@media only screen and (min-width: 767px) {
+   .btn_stop{
+        margin-left: 0;
+    } 
+}

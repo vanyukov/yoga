@@ -1,0 +1,8 @@
+.description__pic {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.input_size{
+    min-width: fit-content;
+}
