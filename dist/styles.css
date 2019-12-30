@@ -19,11 +19,32 @@
     max-height: 400px;
 }
 
-.input_size__eaf4e6c input{
+.input_size__eaf4e6c{
     min-width: fit-content;
 }
 .btn_stop__dfd6c15{
     margin-left: 18px;
+}
+
+.text_count__13ed182{
+    margin-right: -15px;
+}
+
+.left_btn__5a34d20{
+    margin: 0;
+}
+
+@media only screen and (min-width: 767px) {
+   .btn_stop__dfd6c15{
+        margin-left: 0;
+    } 
+}
+.numbers_ml__ca701fc{
+    margin-left: -20px;
+}
+
+.text_ml__47dd39a{
+    margin-left: -5px;
 }
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -78,6 +99,9 @@ body{
 }
 .icon-arrow-right:before {
   content: "\ea34";
+}
+.icon-embed:before {
+  content: "\ea7f";
 }
 
 .rotate90{
@@ -138,10 +162,13 @@ body{
 }
 
 .separator {
-    width: 100vw;
-    height: 16px;
-    box-shadow: 0px 5px 14px 0px rgba(50,50,50,.75);
-    margin: 6px 0;
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 18px;
+
+    margin: 6px 0;
+    padding-bottom: 7px;
+    
+    box-shadow: 0px 5px 14px 0px rgba(50,50,50,.75);
 }
