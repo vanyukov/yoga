@@ -14,7 +14,7 @@ class HeaderInitial extends React.Component {
         type: 'view',
         show: false,
         savedLists: this.props.stores.selected.getSavedLists(),
-        wasSaved: true,
+        wasSaved: false,
         wasLoaded: false
     };
 
