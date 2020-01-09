@@ -4,11 +4,13 @@ import * as selectedApi from "~/api/selected";
 
 export default class SelectedStore extends StoreClass {
 
-    @action load() {
-        const selectedId = selectedApi.getSelectedId()
-            ,elem = this
+    @action load(selectedId=[]) {
+        const elem = this
             ,items = []
         ;
+        if( selectedId.length == 0 ){
+            selectedId = selectedApi.getSelectedId();
+        }
         selectedId.forEach(function (id, i) {
             items.push(elem.rootStore.exercises.getById(id));
         });
@@ -61,6 +63,24 @@ export default class SelectedStore extends StoreClass {
         this.items = [];
         this.save();
     }
+
+    @action addListToSave(name){
+        selectedApi.addListToSave(name);
+    }
+
+    @action getSavedLists(name){
+        return selectedApi.getSavedLists(name);
+    }
+
+    @action loadList(id){
+        this.cleanSelected();
+        this.load(id);
+        this.save();
+  }
+
+    @action removeSavedItem(id){
+        selectedApi.removeSavedItem(id);
+  }
 
     isItemSelected(itemCheck) {
         return this.items.some(item => item == itemCheck);

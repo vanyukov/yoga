@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/public/fonts/icomoon.eot?gxn9fv');
+  src:  url('/public/fonts/icomoon.eot?gxn9fv#iefix') format('embedded-opentype'),
+    url('/public/fonts/icomoon.ttf?gxn9fv') format('truetype'),
+    url('/public/fonts/icomoon.woff?gxn9fv') format('woff'),
+    url('/public/fonts/icomoon.svg?gxn9fv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-download:before {
+  content: "\e960";
+}
+.icon-upload:before {
+  content: "\e961";
+}
+.icon-redo2:before {
+  content: "\e968";
+}
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-pause2:before {
+  content: "\ea1d";
+}
+.icon-stop2:before {
+  content: "\ea1e";
+}
+.icon-forward3:before {
+  content: "\ea20";
+}
+.icon-arrow-right:before {
+  content: "\ea34";
+}
+.icon-ungroup:before {
+  content: "\ea59";
+}
+.icon-embed:before {
+  content: "\ea7f";
+}
